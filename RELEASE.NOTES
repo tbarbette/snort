@@ -1,0 +1,23 @@
+2021-12-01 - Snort 2.9.19
+ 
+[*] New Additions
+ 
+
+	Added support for Appid to detect login success and failure for IMAP and POP3 protocols.
+ 
+[*] Improvements / Fix
+	
+
+	Fixed an issue where verdict will be applied onto next session when timeout occurs in some scenarios.	
+
+	Removed an excessively flooding log.
+
+	Fixed possible integer overflow.
+
+	Added fix to GCC compiled snort to use AC-BNFA-Q search-method when Intel-cpm is enabled.
+
+	Fixed terminology to be bias-free in log/error messages.
+
+	Fixed a potential race condition.
+	
+	Added fix to not to drop packets when window size is 0 by TCP normalizer and Added new alert with GID 129 and SID 21 when such packets are seen.
